@@ -1,2 +1,0 @@
-Container:
-    It is a unit of software/deployment that contains everything thing the code needs to run
