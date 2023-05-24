@@ -52,3 +52,20 @@ docker run redis:tag
 
 
 docker run -d --name apache2-container -e TZ=UTC+1 -p 8080:80 -v /srv/www/html:/var/www/html ubuntu/apache2:2.4-22.04_beta
+
+    This shows the port and volume mapping host:container, and the time zone alone with the
+
+
+docker inspect container_id
+    This gives the details on the container
+
+
+docker logs container_id
+    This shows the logs
+
+
+
+
+
+
+
