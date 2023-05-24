@@ -68,4 +68,7 @@ docker logs container_id
 
 
 
+Namespace tricks the container to make it think it has its on process but it is a lie
+while Cgroups restricts the resource it can use.
 
+cd /var/lib/docker This is where all data is stored
