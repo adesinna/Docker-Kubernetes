@@ -35,3 +35,13 @@ K8 Architecture:
 
     Master vs Slave worker:
         Worker nodes are where the containers are hosted
+
+
+kubectl:
+    This is the cli manager
+
+    kubectl run hello-minikube
+
+    kubectl cluster-info
+
+    kubectl get nodes

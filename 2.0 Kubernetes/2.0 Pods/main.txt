@@ -1,0 +1,16 @@
+A pod is a box where the containers are deployed, the pod lives inside the node
+
+One pod usually contains a container, there might be many pods in a node but each pod only runs one single
+container.
+
+There are some scenario that a helper container might be in the pod, they are not the main container, but they
+are only there to help, they are peripheral containers. The two containers will share the same network.
+
+
+kubectl run nginx --image=nginx # it pulls down the image from dockerhub
+
+kubectl get pods
+
+kubectl describe pod nginx # this gives you more information about the pods
+
+kubectl get pods -o wide # additional information
