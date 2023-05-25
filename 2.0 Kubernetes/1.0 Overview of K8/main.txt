@@ -1,0 +1,37 @@
+Container Orchestration:
+    Managing containers is done by kubernetes.
+
+
+K8 Architecture:
+    Node:
+        A node is a machine (physical or virtual) on which kubernetes is installed and where container
+        will be launched.
+
+    Cluster:
+        This is a set of nodes grouped together, and they are all controlled by the master nodes.
+
+    Components:
+
+        API server:
+            Acts as the front end, where you can interact with k8 cluster
+
+        etcd:
+            This is a key value pair storage, that stores all the information about the nodes
+
+        scheduler:
+            It is responsible for distributing work across the nodes.
+
+        controllers:
+            The brings ups new containers and nodes when one goes down
+
+        container runtime:
+            This is the container engine where the container runs
+
+        kubelet:
+            It makes sure the container are running as expected.
+
+
+
+
+    Master vs Slave worker:
+        Worker nodes are where the containers are hosted
