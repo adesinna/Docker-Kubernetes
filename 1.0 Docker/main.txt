@@ -72,3 +72,7 @@ Namespace tricks the container to make it think it has its on process but it is 
 while Cgroups restricts the resource it can use.
 
 cd /var/lib/docker This is where all data is stored
+
+
+docker run  --mount type=bind,source=/data/mysql,target=/var/lib/mysql
+
