@@ -1,0 +1,35 @@
+Controllers are the monitors kubernetes objects and respond accordingly.
+
+
+When a pod  fails, the Replication controller replaces it, it maintains the number of required pods.
+
+Replication controller they act has load balancer and scaling to maintain the pressure.
+
+Replica set is the upgrade of replication controller
+
+replication controller:
+
+    kubectl create -f rc-definition.yaml
+
+    kubectl get replicationcontroller # to see the number of optimal pods
+
+    kubectl get pods # to see the pods it created in the node
+
+replica set
+
+    kubectl create -f rs-definition.yaml
+
+    kubectl get replicaset
+
+    kubectl get pods
+
+    kubectl delete replicaset name
+
+    Note:
+        Replica set ensures the label is used to choose the ones you need
+
+        if you change something in the manifest file
+
+        kubectl replace -f rs-definition.yaml
+
+
