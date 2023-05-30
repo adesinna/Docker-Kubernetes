@@ -76,3 +76,7 @@ cd /var/lib/docker This is where all data is stored
 
 docker run  --mount type=bind,source=/data/mysql,target=/var/lib/mysql
 
+
+use 20G and t3 medium
+docker compose build
+docker compose up -d
